@@ -1,0 +1,41 @@
+.rotateImg {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    padding: 15% 0;
+}
+
+.rotationStyle1 {
+    display: block;
+    transition: -webkit-transform 1s;
+}
+
+.rotationStyle1:hover {
+    transform: rotate(360deg) translateZ(0);
+}
+
+.rotationStyle2:hover {
+    animation: spin 1s linear infinite;
+}
+
+.rotationStyle3 {
+    animation: spin 1s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
